@@ -21,7 +21,7 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
 
           script: |
-            cd ${{ PROJ_DIR }}
+            cd ${{ secrets.PROJ_DIR }}
             git pull
             docker-compose up -d --build
              
