@@ -23,7 +23,7 @@ jobs:
           script: |
             cd ${{ secrets.PROJ_DIR }}
             git pull
-            ./mvnw clean package -DskipTests
+            mvn clean package -DskipTests
             docker-compose up -d --build --force-recreate
              
             
