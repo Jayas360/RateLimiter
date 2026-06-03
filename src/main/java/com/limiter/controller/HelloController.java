@@ -13,7 +13,7 @@ public class HelloController {
     public ResponseEntity<String> getHello(HttpServletRequest httpServletRequest) {
 
         System.out.println("request served");
-        return ResponseEntity.ok("Hello!");
+        return ResponseEntity.ok("Hello! How are you.");
     }
 
     @GetMapping("/hello2")
