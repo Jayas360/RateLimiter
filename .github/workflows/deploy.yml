@@ -23,6 +23,6 @@ jobs:
           script: |
             cd ${{ secrets.PROJ_DIR }}
             git pull
-            docker-compose up -d --build
+            docker-compose up -d --build --force-recreate
              
             
